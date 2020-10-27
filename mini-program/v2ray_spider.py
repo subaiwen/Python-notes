@@ -2,8 +2,9 @@ import requests
 import re
 
 #v2ray
-url_list = ['https://github.com/bannedbook/fanqiang/wiki/v2ray免费账号', 
-            'https://github.com/iwxf/free-v2ray']
+url_list = ['https://github.com/iwxf/free-v2ray',
+            'https://github.com/bannedbook/fanqiang/wiki/v2ray免费账号' 
+            ]
 
 def spider(url):
     '''
