@@ -21,8 +21,8 @@ def spider(url):
     sub_list = []
     # apply when a str contains links split by \n
     for v2ray_str in v2ray_list:
-        v2ray_str_list = [i for i in re.split('(\n)', v2ray_str) if i != '\n'] # remove an unexist element will raise error
-        sub_list = sub_list + v2ray_str_list
+        sub_list = sub_list + [i for i in re.split('(\n)', v2ray_str) if i != '\n'] # remove an unexist element will raise error
+        
     return sub_list
 
 sub_link_list = []
